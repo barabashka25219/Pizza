@@ -5,7 +5,7 @@
 - Django 4.1
 - uWSGI 2.0.21
 ## Development 
-- `git clone git@github.com:barabashka25219/Learning-Log.git` (SSH)
+- `git clone git@github.com:barabashka25219/Pizza.git` (SSH)
 - `git clone https://github.com/barabashka25219/Pizza.git`    (HTTPS)
 - `conda env create -f environment.yml`
 - `conda activate Pizza`
