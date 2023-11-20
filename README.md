@@ -10,13 +10,11 @@
 - `conda env create -f environment.yml`
 - `conda activate Pizza`
 ### Add package 
-- `conda search $PACKAGE`
-> Show available version of a packet 
 - `conda install -n Pizza $PACKAGE[=$VERSION]`
-- `conda list -n Pizza $PACKAGE`
-> Make sure that the packet is installed in your environment via this command
+> You can search a package via `conda search $PACKAGE`
+>> Make sure that the package is installed via `conda list -n Pizza $PACKAGE`
 - `conda env export > environment.yml`
-- `git commit -m "Add $PACKET in environment"`
+- `git commit -m "Add $PACKAGE in environment"`
 - `git push origin $BRANCH`
 ## Work with project
 - `python Pizza/manage.py migrate`
