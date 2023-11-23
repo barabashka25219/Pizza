@@ -3,15 +3,15 @@
 {% block title %}Overview{% endblock %}
 
 {% block content %}
-    {% for pizza in pizzaz %}
-        <ul>
+    <ul>
+        {% for pizza in pizzaz %}
             <p>
-                <li>{{ pizza }}</li>
+                <li><a href="{% url 'pizzaz:pizza' pizza.id %}">{{pizza}}</a></li>
             </p>
-        </ul>
-    {% empty %}
-        <p>
-            No available pizzaz yet.
-        </p>
-    {% endfor %}
+        {% empty %}
+            <p>
+                <li>No available pizzaz yet.</li>
+            </p>
+        {% endfor %}
+    </ul>
 {% endblock %}
