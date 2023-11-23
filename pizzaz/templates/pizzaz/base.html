@@ -6,6 +6,9 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    <div id="navbar">
+        <a href="{% url 'pizzaz:pizzaz_overview' %}">Pizzaz overview</a>
+    </div>
     <div>
         {% block content %}{% endblock %}
     </div>

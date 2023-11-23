@@ -1,0 +1,17 @@
+{% extends "pizzaz/base.html" %}
+
+{% block title %}Overview{% endblock %}
+
+{% block content %}
+    {% for pizza in pizzaz %}
+        <ul>
+            <p>
+                <li>{{ pizza }}</li>
+            </p>
+        </ul>
+    {% empty %}
+        <p>
+            No available pizzaz yet.
+        </p>
+    {% endfor %}
+{% endblock %}
