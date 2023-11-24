@@ -1,4 +1,4 @@
-# Learning-Log
+# Pizzaz
 ## Requirements
 - Anaconda 23.7.4
 - Python 3.11.5
